@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: "Roboto";
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+}
+article {
+  border-bottom: 2px solid grey;
+}
+article:last-child {
+  border-bottom: none;
+}
+
+.sidebar {
+  margin-left: 40px;
+  grid-area: 1 / 1 / 2 / 2;
+  text-align: left;
+  position: fixed;
+  width: 100%;
+}
+.content {
+  margin-right: 100px;
+  grid-area: 1 / 2 / 2 / 3;
+  width: 1000px;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+.about {
+  margin-right: 100px;
+  text-align: left;
+  grid-area: 1 / 2 / 2 / 3;
+  width: 1000px;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.content h1 {
+  font-size: 2rem;
+}
